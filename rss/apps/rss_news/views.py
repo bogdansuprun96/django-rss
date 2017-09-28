@@ -10,8 +10,9 @@ def index(request):
     number = random.randrange(0, 100)
     # return HttpResponse("Hi")
     context = {
-        'value': 'Hello Python',
-        'title': 'Hello Django!',
-        'number': str(number),
+        'title': 'Portfolio',
+        'name': 'Bohdan',
+        'surname': 'Suprun',
+        'speciality': 'Python, Django Programmer',
     }
     return render(request, "index.html", context)
